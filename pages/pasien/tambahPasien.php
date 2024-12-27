@@ -8,7 +8,8 @@
         $nama = $_POST['nama'];
         $no_ktp = $_POST['no_ktp'];
         $alamat = $_POST['alamat'];
-        $password = md5($nama);
+        $password = $_POST["password"];
+        $password = md5($password);
         $no_hp = $_POST['no_hp'];
 
         // mendapatkan data tahun dan bulan saat ini
