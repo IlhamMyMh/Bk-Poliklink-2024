@@ -102,18 +102,9 @@
                                                                 required>
                                                         </div>
                                                         <div class="form-group">
-                                                            <label for="poli">Poli</label>
-                                                            <select class="form-control" id="poli" name="poli">
-                                                                <?php
-                                                                require 'config/koneksi.php';
-                                                                $query = "SELECT * FROM poli";
-                                                                $results  = mysqli_query($mysqli,$query);
-                                                                while ($dataPoli = mysqli_fetch_assoc($results)) {
-                                                                    $selected = $dataPoli['id']
-                                                                ?>
-                                                                <option value="<?php echo $dataPoli['id'] ?>">
-                                                                    <?php echo $dataPoli['nama_poli'] ?></option>
-                                                                <?php } ?>
+                                                        <label for="poli">Poli</label>
+                                                        <input type="text" class="form-control" id="poli" name="poli" value="<?php echo $data['nama_poli']; ?>" readonly>
+                                                    </div>
                                                             </select>
                                                         </div>
                                                         <button type="submit" class="btn btn-success">Simpan</button>
