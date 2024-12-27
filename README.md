@@ -4,7 +4,7 @@ Kelas : WD10
 
 # ubah nama folder setelah di ekstrak menjadi : poliklinik
 
-# Admin (Login Admin ada pada card Dokter/login di doter kemudian masukkan)
+# Admin (Login Admin ada pada card Dokter/login di dokter kemudian masukkan)
 username : admin
 psw : admin
 
